@@ -1,0 +1,27 @@
+extends layout
+
+block content
+	h1.logo
+		i.icon-logo
+	div.form-wrapper
+		div.biz-selection
+			span.selected חפש עסק
+			ul.options
+				li(data-color=1) חפש עסק
+				li(data-color=2)חפש איש
+				li(data-color=3)חפש קהילה
+		div.search-field
+			input.search(placeholder="מי אתה מחפש...")
+		div.region-field
+			input.region(placeholder="באיזור...")
+		div.button-wrapper
+			a.search-button(type="button")
+				i.icon-icon-search
+	h4 דוגמא: חפש משה כהן בירושלים / אינסטלטור בבני ברק
+
+	ul.cats
+		-for (var x=1; x<8; x++)
+			li
+				a
+					i.icon-icon-restaurant
+					span מסעדות
